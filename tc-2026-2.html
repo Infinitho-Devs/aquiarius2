@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Términos y Condiciones – Festival Presidente 2026</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/imagenes/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Documento independiente (Terminos y Condiciones - Festival Presidente 2026,
+     version 2: tc-2026.docx). Todo el CSS/JS vive aqui adentro y usa el
+     prefijo tc26- para no chocar con nada de ShoWare ni del sitio si
+     llegara a convivir en la misma pagina. Pensado para abrirse solo
+     (pestana nueva / popup), igual que hoy se abre el PDF de
+     terminosofuse.asp. */
+
+  @font-face {
+    font-family: 'OVERTURE';
+    src: url('https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/12/PPWatch-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  #tc26-root, #tc26-root *, #tc26-root *::before, #tc26-root *::after {
+    box-sizing: border-box;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background-color: #001a10;
+    background-image: url('https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/imagenes/malla-original-2171x4096.png');
+    background-repeat: repeat;
+    background-position: center top;
+  }
+
+  #tc26-root {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #dfe4e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0 18px 70px;
+  }
+
+  #tc26-root a { color: #DFBA53; }
+
+  /* ===== Encabezado ===== */
+  .tc26-header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 54px 8px 26px;
+    text-align: center;
+  }
+  .tc26-kicker {
+    display: inline-block;
+    color: rgba(255,255,255,.5);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .tc26-title {
+    margin: 0;
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: clamp(30px, 5.2vw, 48px);
+    line-height: 1.08;
+  }
+  .tc26-title em {
+    display: block;
+    font-style: normal;
+    color: #DFBA53;
+    font-size: clamp(16px, 2.4vw, 22px);
+    letter-spacing: 3px;
+    margin-top: 10px;
+  }
+  .tc26-datechip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 26px;
+    padding: 11px 20px 11px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(223,186,83,.32);
+    background: rgba(0,0,0,.28);
+    color: #cfd6d1;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .2px;
+  }
+  .tc26-datechip svg {
+    flex: 0 0 auto;
+    width: 17px; height: 17px;
+    stroke: #DFBA53;
+  }
+
+  /* ===== Contenedor / tarjetas ===== */
+  .tc26-wrap { max-width: 880px; margin: 0 auto; }
+
+  .tc26-card {
+    position: relative;
+    margin: 0 0 18px;
+    padding: 26px 26px 24px;
+    border-radius: 18px;
+    border: 1px solid rgba(223,186,83,.16);
+    background-color: #01150B;
+    background-image:
+      radial-gradient(120% 140% at 100% 0%, rgba(223,186,83,.10) 0%, rgba(223,186,83,0) 55%),
+      linear-gradient(165deg, #06251a 0%, #01150B 68%, #010a06 100%);
+    box-shadow: 0 18px 40px rgba(0,0,0,.4);
+  }
+
+  .tc26-intro p { margin: 0; color: #cfd6d1; font-size: 14.5px; }
+
+  /* ===== Indice ===== */
+  .tc26-toc h2 {
+    margin: 0 0 16px;
+    color: #DFBA53;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .tc26-toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .tc26-toc-grid a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.02);
+    color: #dfe4e0;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1.3;
+    transition: border-color .2s ease, background .2s ease, transform .2s ease;
+  }
+  .tc26-toc-grid a:hover {
+    border-color: rgba(223,186,83,.5);
+    background: rgba(223,186,83,.06);
+    transform: translateY(-1px);
+  }
+  .tc26-toc-grid b {
+    flex: 0 0 auto;
+    width: 22px; height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(223,186,83,.14);
+    color: #DFBA53;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  /* ===== Secciones ===== */
+  .tc26-sec { scroll-margin-top: 18px; }
+
+  .tc26-sec__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(223,186,83,.16);
+  }
+  .tc26-sec__num {
+    flex: 0 0 auto;
+    width: 34px; height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #06251a;
+    background-color: #DFBA53;
+    background-image: radial-gradient(circle at 32% 26%, #f7e29c 0%, #DFBA53 56%, #b8923a 100%);
+  }
+  .tc26-sec__head h2 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: clamp(15px, 2.1vw, 18px);
+    font-weight: 800;
+    letter-spacing: .6px;
+    line-height: 1.3;
+  }
+
+  .tc26-sec p { margin: 0 0 13px; color: #cfd6d1; font-size: 13.5px; }
+  .tc26-sec p:last-child { margin-bottom: 0; }
+
+  .tc26-sub {
+    margin: 18px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(223,186,83,.28);
+  }
+  .tc26-sub:first-of-type { margin-top: 4px; }
+  .tc26-sub span {
+    color: #DFBA53;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .tc26-list {
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tc26-list:last-child { margin-bottom: 0; }
+  .tc26-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #e3e7e2;
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+  .tc26-list svg {
+    flex: 0 0 auto;
+    width: 16px; height: 16px;
+    margin-top: 3px;
+    stroke: #DFBA53;
+    fill: none;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .tc26-list b { color: #ffffff; font-weight: 700; }
+
+  /* ===== Pie ===== */
+  .tc26-foot {
+    text-align: center;
+    padding-top: 8px;
+  }
+  .tc26-foot-brand {
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .tc26-foot-org {
+    color: #a9b3ad;
+    font-size: 12.5px;
+    margin-bottom: 20px;
+  }
+  .tc26-foot-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .tc26-foot-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(223,186,83,.3);
+    background: rgba(0,0,0,.22);
+    color: #dfe4e0;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    transition: border-color .2s ease, background .2s ease;
+  }
+  .tc26-foot-contact a:hover {
+    border-color: #DFBA53;
+    background: rgba(223,186,83,.1);
+  }
+  .tc26-foot-contact svg {
+    width: 15px; height: 15px;
+    stroke: #DFBA53;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .tc26-foot-contact svg.tc26-wa { fill: #DFBA53; stroke: none; }
+  .tc26-foot-legal {
+    margin: 24px auto 0;
+    max-width: 560px;
+    color: rgba(255,255,255,.35);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  /* ===== Volver arriba ===== */
+  .tc26-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 42px; height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #DFBA53;
+    background-image: linear-gradient(180deg, #f0cf72 0%, #DFBA53 100%);
+    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+    text-decoration: none;
+    z-index: 5;
+  }
+  .tc26-top svg {
+    width: 18px; height: 18px;
+    stroke: #06251a;
+    fill: none;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @media (max-width: 640px) {
+    .tc26-toc-grid { grid-template-columns: 1fr; }
+    .tc26-card { padding: 20px 18px 18px; border-radius: 14px; }
+    .tc26-header { padding-top: 40px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div id="tc26-root">
+
+  <a id="tc26-arriba"></a>
+
+  <header class="tc26-header">
+    <span class="tc26-kicker">Festival Presidente</span>
+    <h1 class="tc26-title">Términos y Condiciones<em>Festival Presidente 2026</em></h1>
+    <span class="tc26-datechip">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      11 y 12 de diciembre de 2026 · Centro Olímpico Juan Pablo Duarte
+    </span>
+  </header>
+
+  <div class="tc26-wrap">
+
+    <section class="tc26-card tc26-intro">
+      <p>Festival Presidente 2026 es un evento de entretenimiento de carácter integral que reunirá una oferta artística y musical diversa, acompañada de experiencias y actividades para el público asistente. Estos Términos y Condiciones regulan la compra, entrega y uso de las boletas y/o brazaletes, así como el acceso y permanencia en el Festival.</p>
+    </section>
+
+    <nav class="tc26-card tc26-toc" aria-label="Índice">
+      <h2>Índice</h2>
+      <div class="tc26-toc-grid">
+        <a href="#s1"><b>1</b> Organizador y protección al consumidor</a>
+        <a href="#s2"><b>2</b> Localidades y modalidades de compra</a>
+        <a href="#s3"><b>3</b> Abonos de 2 días y uso de identificación de acceso</a>
+        <a href="#s4"><b>4</b> Entrega de boletas y brazaletes</a>
+        <a href="#s5"><b>5</b> Fases de venta y medios de pago</a>
+        <a href="#s6"><b>6</b> Disponibilidad, aforo y límite de boletas</a>
+        <a href="#s7"><b>7</b> Precio, cargos, impuestos y entrega</a>
+        <a href="#s8"><b>8</b> Naturaleza del Festival y cambios en el line-up</a>
+        <a href="#s9"><b>9</b> Acceso de menores al Festival</a>
+        <a href="#s10"><b>10</b> Accesibilidad</a>
+        <a href="#s11"><b>11</b> Derecho de admisión, permanencia y seguridad</a>
+        <a href="#s12"><b>12</b> Reventa, autenticidad y usos promocionales</a>
+        <a href="#s13"><b>13</b> Grabación, transmisión e imagen</a>
+        <a href="#s14"><b>14</b> Mascotas</a>
+        <a href="#s15"><b>15</b> Horarios y programación</a>
+        <a href="#s16"><b>16</b> Anuncio oficial y canales de información</a>
+        <a href="#s17"><b>17</b> Disposiciones finales</a>
+      </div>
+    </nav>
+
+    <section id="s1" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">1</span><h2>Organizador y protección al consumidor</h2></div>
+      <p>El Organizador del Festival Presidente 2026 es SD CONCERTS.</p>
+      <p>Los presentes Términos y Condiciones serán interpretados y aplicados de conformidad con la Ley General de Protección de los Derechos del Consumidor o Usuario No. 358-05 y demás normativa aplicable de la República Dominicana.</p>
+      <p>La información esencial de la oferta, incluyendo fechas, localidad, modalidad de acceso, restricciones relevantes, precio y cargos aplicables, será puesta a disposición del consumidor de forma clara y oportuna antes de finalizar la compra.</p>
+    </section>
+
+    <section id="s2" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">2</span><h2>Localidades y modalidades de compra</h2></div>
+      <p>Las boletas del Festival se comercializarán bajo la modalidad de <b style="color:#fff">abono válido para los dos (2) días del Festival</b>, según disponibilidad y aforo aplicable a cada localidad. Las localidades habilitadas son las siguientes:</p>
+      <ul class="tc26-list">
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada Oeste</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada Este</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada A1</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada B1</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada C1</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Grada D1</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Terreno</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Terreno VIP</span></li>
+      </ul>
+    </section>
+
+    <section id="s3" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">3</span><h2>Abonos de dos (2) días y uso de identificación de acceso</h2></div>
+      <p>El acceso será válido únicamente para una (1) persona, el cual será personal e intransferible. El acceso será personal, por ende, no podrá compartirse, prestarse ni utilizarse por personas distintas en días diferentes.</p>
+      <p>El acceso al festival solo permitirá un ingreso por día, por ende, una vez el asistente ingrese al área correspondiente del festival, su acceso quedará bloqueado por ese día. Si el asistente sale del Festival, no podrá reingresar por el bloqueo que se generará en su primer ingreso.</p>
+      <p>Cuando la identificación para el acceso presente manipulación, cortes, grabaduras, quemaduras, reparaciones caseras, deformaciones voluntarias u otras alteraciones imputables al portador que impidan validar su autenticidad, podrá ser decomisado y podrá negarse el ingreso o la reposición, previa verificación de las circunstancias aplicables. Lo anterior no limita los derechos del consumidor cuando el daño, defecto o imposibilidad de uso sea atribuible al Organizador, al operador de boletería o a sus proveedores, conforme a la Ley No. 358-05.</p>
+    </section>
+
+    <section id="s4" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">4</span><h2>Entrega de boletas y brazaletes</h2></div>
+
+      <div class="tc26-sub"><span>4.1 Entrega mediante brazalete físico</span></div>
+      <p>El mecanismo de acceso aplicable al Festival, así como la modalidad, procedimiento, fechas, lugares y demás condiciones para la entrega, habilitación o utilización de las boletas, credenciales, brazaletes o cualquier otro medio de identificación o validación que corresponda para el acceso de los participantes al Festival Presidente 2026, serán informados oportunamente por el Organizador y/o Tuboleta.com.do a través de los canales oficiales.</p>
+      <p>El comprador deberá seguir las instrucciones que sean comunicadas para la localidad y modalidad de acceso correspondiente, así como para el retiro de la identificación de acceso en caso de que corresponda.</p>
+      <p>Para el retiro de la identificación de acceso, el comprador deberá presentar su entrada desde su cuenta de Tuboleta.com.do y el método de pago utilizado para la compra.</p>
+      <p>El asistente reconoce que la identificación de acceso es obligatoria para ingresar al Festival Presidente 2026.</p>
+
+      <div class="tc26-sub"><span>4.2 Entrega mediante boleta digital</span></div>
+      <p>Cuando la localidad adquirida utilice boleta digital, esta será entregada a través de Tuboleta.com.do durante el proceso de compra. Para ingresar, el asistente deberá presentar su Boleta Digital desde un dispositivo móvil a través de la plataforma oficial.</p>
+    </section>
+
+    <section id="s5" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">5</span><h2>Fases de venta y medios de pago</h2></div>
+      <ul class="tc26-list">
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Preventa Exclusiva Visa Scotiabank (Abonos):</b> viernes 14 de agosto de 2026, hasta agotar existencia o hasta el inicio de la siguiente fase el sábado 15 de agosto. Máximo cuatro (4) boletas por transacción. Medio de pago: tarjetas de crédito y débito Visa Scotiabank.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Preventa Scotiabank (Abonos):</b> sábado 15 y domingo 16 de agosto de 2026, hasta agotar existencia o hasta el inicio de la siguiente fase el lunes 17 de agosto. Máximo cuatro (4) boletas por transacción. Medio de pago: tarjetas de crédito y débito Scotiabank.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Preventa Visa (Abonos):</b> lunes 17 y martes 18 de agosto de 2026, hasta agotar existencia. Máximo cuatro (4) boletas por transacción. Medio de pago: tarjetas Visa.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Venta General (Abonos):</b> comenzará el miércoles 19 o jueves 20 de agosto de 2026, dependiendo de la finalización de la preventa anterior, y continuará hasta agotar existencia. Estará disponible el aforo restante para compra con cualquier medio de pago habilitado en Tuboleta.com.do.</span></li>
+      </ul>
+      <p>Las preventas exclusivas corresponden al setenta por ciento (70&nbsp;%) del aforo disponible. Scotiabank y Visa participan exclusivamente como aliados del evento y no asumen responsabilidad por la organización, ejecución, cancelación o modificaciones del Festival.</p>
+    </section>
+
+    <section id="s6" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">6</span><h2>Disponibilidad, aforo y límite de boletas</h2></div>
+      <p>La disponibilidad de boletería dependerá de las reservas efectuadas en Tuboleta.com.do durante cada fase. Una vez agotado el aforo destinado a una fase, se habilitará la fase siguiente o la venta general, según corresponda.</p>
+      <p>Toda reserva que quede sin efecto por devolución, retracto, rechazo bancario, falta de pago u otra causa se reincorporará al aforo disponible de la fase que se encuentre vigente al momento de su liberación.</p>
+      <p>El aforo total podrá incluir reservas técnicas, del Organizador y de patrocinadores, que eventualmente podrán ser liberadas a la venta.</p>
+      <p>Se establece un máximo de cuatro (4) boletas o abonos por transacción por persona, en todas las fases de venta. Cada cuenta deberá estar vinculada a un individuo único y contener información válida y verificable. No podrán utilizarse varias cuentas para eludir los límites publicados.</p>
+      <p>Si un usuario excede o intenta exceder los límites de compra, podrá cancelarse la compra y restringirse su capacidad de adquirir nuevas boletas, previa notificación al correo electrónico asociado a la cuenta.</p>
+      <p>El carrito de compra tendrá un tiempo límite de treinta (30) minutos para finalizar la transacción.</p>
+    </section>
+
+    <section id="s7" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">7</span><h2>Precio, cargos, impuestos y costos de entrega</h2></div>
+      <p>El precio publicado de la boleta o abono podrá estar sujeto a cargos por servicio, procesamiento de pago, método de envío o entrega e impuestos aplicables. Todos los cargos deberán ser desglosados e informados de manera transparente al consumidor antes de finalizar la compra, y el monto total deberá ser aprobado por el cliente antes de confirmar el pago.</p>
+      <p>El costo de procesamiento podrá variar según el medio de pago seleccionado. Los gastos de envío o entrega, cuando apliquen, se calcularán según la ubicación y el método de entrega.</p>
+      <p>El participante reconoce que el pago de las boletas estará sujeto a impuestos, cargos o servicios adicionales en caso de que corresponda. En caso de no estar de acuerdo, podrá no realizar la transacción. Para el pago de los montos correspondientes el asistente deberá aprobarlos antes de procesarlo.</p>
+    </section>
+
+    <section id="s8" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">8</span><h2>Naturaleza del Festival y cambios en el line-up</h2></div>
+      <p>El Festival podrá desarrollarse en uno o varios escenarios y espacios, de manera simultánea o sucesiva, con múltiples artistas nacionales y/o internacionales, actividades, experiencias y otros contenidos de entretenimiento.</p>
+      <p>La compra de una entrada corresponde al acceso al Festival como experiencia integral y no garantiza la presentación de un artista en particular ni su participación en una fecha específica.</p>
+      <p>El Organizador podrá modificar horarios, reprogramar o cancelar parcialmente presentaciones cuando existan razones justificadas, incluyendo fuerza mayor, condiciones climáticas, seguridad o causas razonablemente ajenas a su control. Los cambios serán comunicados oportunamente por los canales oficiales.</p>
+      <p>Una modificación no sustancial del line-up no generará derecho a reembolso. Cuando la modificación altere de manera sustancial las condiciones esenciales de la oferta, exista cancelación total, reprogramación del Festival o corresponda conforme a la Ley No. 358-05, se informarán al consumidor las alternativas, procedimientos y plazos aplicables, incluyendo el reembolso cuando legalmente proceda.</p>
+      <p>En caso de cancelación total, el Organizador informará oportunamente los canales, procedimientos y plazos habilitados para gestionar los reembolsos.</p>
+      <p>El Organizador no asumirá gastos indirectos contratados separadamente por el cliente, tales como transporte, alojamiento o alimentación, cuando la modificación responda a causas no imputables al Organizador, sin perjuicio de los derechos irrenunciables reconocidos por la legislación vigente.</p>
+    </section>
+
+    <section id="s9" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">9</span><h2>Acceso de menores al Festival</h2></div>
+      <ul class="tc26-list">
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Todo menor hasta diecisiete (17) años deberá ingresar acompañado por un adulto responsable mayor de dieciocho (18) años.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>El menor y el adulto acompañante deberán contar con una boleta o abono válido que habilite su acceso conforme a la localidad y condiciones informadas al momento de la compra, y presentar documento de identidad válido al momento del ingreso.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>El adulto responsable deberá permanecer en todo momento con el menor. El personal de apoyo y las medidas de seguridad del Festival no implican la asunción de custodia o cuidado personal del menor por parte del Organizador.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Cuando se incumplan requisitos de edad, acompañamiento o no exista documentación de identidad por parte del acompañante que demuestre la mayoría de edad, podrá negarse el ingreso y no se procederá con el reembolso cuando la causa sea imputable al comprador o asistente, sin perjuicio de los derechos previstos en la Ley No. 358-05.</span></li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Queda terminantemente prohibida la venta y el consumo de bebidas alcohólicas por parte de menores de edad dentro del evento. El acompañante será responsable del menor durante su permanencia en el evento y deberá velar por el cumplimiento de esta disposición. En caso de que la organización identifique a un menor consumiendo bebidas alcohólicas, se reserva el derecho de solicitar tanto su retiro inmediato como el de su acompañante responsable.</span></li>
+      </ul>
+    </section>
+
+    <section id="s10" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">10</span><h2>Accesibilidad</h2></div>
+      <p>La localidad Terreno contará con un área designada para personas con movilidad reducida. Antes de la compra se informarán de manera clara las condiciones de accesibilidad aplicables.</p>
+      <p>El Organizador procurará realizar los ajustes razonables que resulten aplicables y posibles conforme a la normativa vigente, las condiciones de seguridad, la infraestructura y las características del recinto. Todo acompañante deberá contar con la boleta correspondiente, salvo disposición legal aplicable en contrario.</p>
+    </section>
+
+    <section id="s11" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">11</span><h2>Derecho de admisión, permanencia y seguridad</h2></div>
+      <p>El Organizador podrá ejercer el derecho de admisión y permanencia con base en criterios objetivos, razonables, no discriminatorios, previamente informados y vinculados a la seguridad, convivencia, aforo, cumplimiento de la ley y de estos Términos y Condiciones.</p>
+      <p>Los asistentes estarán sujetos a las medidas de seguridad establecidas por el Organizador y las autoridades competentes. La negativa injustificada a someterse a controles de seguridad lícitos o el incumplimiento grave de las medidas aplicables podrá ocasionar la denegación de entrada o el retiro del recinto.</p>
+      <p>Cuando la medida sea imputable al asistente por incumplimiento de condiciones previamente informadas, podrá no proceder el reembolso, sin perjuicio de los derechos irrenunciables reconocidos por la Ley No. 358-05.</p>
+      <p>El cliente reconoce que los eventos de afluencia masiva implican riesgos propios de esta clase de actividades, sin que esta disposición limite las obligaciones legales del Organizador ni los derechos irrenunciables del consumidor.</p>
+    </section>
+
+    <section id="s12" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">12</span><h2>Reventa, autenticidad y usos promocionales</h2></div>
+      <p>Tuboleta.com.do es el único operador de boletería autorizado para el Festival, sin perjuicio de los puntos o socios de venta que el Organizador autorice expresamente.</p>
+      <p>Queda prohibida la reventa o intento de reventa de boletas o abonos. Se entiende por reventa la comercialización, venta o cesión a título oneroso de una entrada previamente adquirida, al mismo precio o a un precio superior al establecido por el Organizador.</p>
+      <p>La reventa ilegal, falsificación o copia de boletas podrá dar lugar a su incautación y cancelación, así como a la restricción de privilegios de compra cuando exista una violación comprobada de las políticas aplicables.</p>
+      <p>El Organizador no garantiza la autenticidad de boletas adquiridas a revendedores externos no autorizados. Se recomienda adquirirlas exclusivamente a través de Tuboleta.com.do o de canales expresamente autorizados.</p>
+      <p>Las boletas no podrán utilizarse para publicidad, promociones, concursos o sorteos sin autorización formal y previa por escrito del Organizador.</p>
+    </section>
+
+    <section id="s13" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">13</span><h2>Grabación, transmisión e imagen</h2></div>
+      <p>El asistente reconoce que el Festival es un evento público y que podrán realizarse grabaciones, fotografías y transmisiones del evento.</p>
+      <p>La captación y utilización de la imagen, voz o apariencia de los asistentes por el Organizador, sus socios, licenciatarios, cesionarios, marcas y socios de medios se realizará en el contexto de la cobertura, transmisión, exhibición, publicación, promoción y memoria del Festival, por medios actuales o futuros, sin perjuicio de los derechos que correspondan conforme a la legislación aplicable.</p>
+      <p>Está prohibido el ingreso de cámaras fotográficas profesionales, videograbadoras y equipos similares, salvo autorización expresa del Organizador.</p>
+    </section>
+
+    <section id="s14" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">14</span><h2>Mascotas</h2></div>
+      <p>No se permite el ingreso de mascotas al área donde se desarrollará el Festival, sin perjuicio de las excepciones que resulten obligatorias conforme a la normativa aplicable.</p>
+    </section>
+
+    <section id="s15" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">15</span><h2>Horarios y programación</h2></div>
+      <p>El participante será informado de la hora de apertura de puertas para el público en general a través de los canales oficiales de información del Festival Presidente 2026.</p>
+      <p>El participante será informado de la hora de apertura de puertas para la zona de menores de edad a través de los canales oficiales de información del Festival Presidente 2026.</p>
+      <p>La programación está sujeta a cambios conforme a las condiciones establecidas en estos Términos y Condiciones.</p>
+    </section>
+
+    <section id="s16" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">16</span><h2>Anuncio oficial y canales de información</h2></div>
+      <p>El anuncio oficial del Festival, incluyendo fechas, lugar, line-up y demás información relevante, se realizará a través de los canales oficiales que determine el Organizador.</p>
+      <p>Las modificaciones relevantes, instrucciones de acceso y demás información operativa serán comunicados oportunamente a través de los canales oficiales del Festival y/o Tuboleta.com.do, según corresponda.</p>
+    </section>
+
+    <section id="s17" class="tc26-card tc26-sec">
+      <div class="tc26-sec__head"><span class="tc26-sec__num">17</span><h2>Disposiciones finales</h2></div>
+      <p>La compra de una boleta o abono implica la aceptación de estos Términos y Condiciones en la versión informada al consumidor antes de completar la transacción.</p>
+      <p>Ninguna disposición de estos Términos y Condiciones podrá interpretarse como renuncia o limitación de los derechos irrenunciables reconocidos al consumidor por la Ley No. 358-05 y demás normativa aplicable de la República Dominicana.</p>
+    </section>
+
+    <footer class="tc26-card tc26-foot">
+      <div class="tc26-foot-brand">Festival Presidente 2026</div>
+      <div class="tc26-foot-org">Organiza SD CONCERTS · Boletería oficial: Tuboleta.com.do</div>
+      <div class="tc26-foot-contact">
+        <a href="tel:+18297330404">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          829-733-0404
+        </a>
+        <a href="mailto:servicio@tuboleta.com.do">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          servicio@tuboleta.com.do
+        </a>
+        <a href="https://wa.me/18295208207" target="_blank" rel="noopener">
+          <svg class="tc26-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="tc26-foot-legal">Este documento resume los Términos y Condiciones informados al consumidor para la compra de boletas y/o brazaletes del Festival Presidente 2026. Ante cualquier duda, contáctanos a través de los canales oficiales antes de completar tu compra.</p>
+    </footer>
+
+  </div>
+
+  <a class="tc26-top" href="#tc26-arriba" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
+  </a>
+
+</div>
+</body>
+</html>

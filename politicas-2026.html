@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Políticas de Seguridad y Privacidad – Festival Presidente 2026</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/imagenes/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Documento independiente (Politicas de Seguridad y Privacidad -
+     Festival Presidente 2026). Todo el CSS vive aqui adentro con
+     prefijo pol26- para no chocar con nada de ShoWare ni del sitio si
+     llegara a convivir en la misma pagina. Pensado para abrirse solo
+     (pestana nueva / popup).
+
+     Las variables de fusion de ShoWare (%TicketSystemName%,
+     %PolicyEmail%) que traia el documento original se resolvieron a
+     mano: "Festival Presidente - TuBoleta" y
+     servicio@tuboleta.com.do. */
+
+  @font-face {
+    font-family: 'OVERTURE';
+    src: url('https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/12/PPWatch-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  #pol26-root, #pol26-root *, #pol26-root *::before, #pol26-root *::after {
+    box-sizing: border-box;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background-color: #001a10;
+    background-image: url('https://cdn.jsdelivr.net/gh/Infinitho-Devs/aquiarius@main/imagenes/malla-original-2171x4096.png');
+    background-repeat: repeat;
+    background-position: center top;
+  }
+
+  #pol26-root {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #dfe4e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0 18px 70px;
+  }
+
+  #pol26-root a { color: #DFBA53; }
+
+  /* ===== Encabezado ===== */
+  .pol26-header {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 54px 8px 26px;
+    text-align: center;
+  }
+  .pol26-kicker {
+    display: inline-block;
+    color: rgba(255,255,255,.5);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .pol26-title {
+    margin: 0;
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: clamp(26px, 4.6vw, 42px);
+    line-height: 1.12;
+  }
+  .pol26-title em {
+    display: block;
+    font-style: normal;
+    color: #DFBA53;
+    font-size: clamp(16px, 2.4vw, 22px);
+    letter-spacing: 3px;
+    margin-top: 10px;
+  }
+
+  /* ===== Contenedor / tarjetas ===== */
+  .pol26-wrap { max-width: 860px; margin: 0 auto; }
+
+  .pol26-card {
+    position: relative;
+    margin: 0 0 18px;
+    padding: 26px 26px 24px;
+    border-radius: 18px;
+    border: 1px solid rgba(223,186,83,.16);
+    background-color: #01150B;
+    background-image:
+      radial-gradient(120% 140% at 100% 0%, rgba(223,186,83,.10) 0%, rgba(223,186,83,0) 55%),
+      linear-gradient(165deg, #06251a 0%, #01150B 68%, #010a06 100%);
+    box-shadow: 0 18px 40px rgba(0,0,0,.4);
+  }
+
+  .pol26-intro p { margin: 0; color: #cfd6d1; font-size: 14.5px; }
+  .pol26-intro code {
+    padding: 1px 6px;
+    border-radius: 5px;
+    background: rgba(223,186,83,.14);
+    color: #f0cf72;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12.5px;
+  }
+
+  /* ===== Indice ===== */
+  .pol26-toc h2 {
+    margin: 0 0 16px;
+    color: #DFBA53;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .pol26-toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .pol26-toc-grid a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.02);
+    color: #dfe4e0;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1.3;
+    transition: border-color .2s ease, background .2s ease, transform .2s ease;
+  }
+  .pol26-toc-grid a:hover {
+    border-color: rgba(223,186,83,.5);
+    background: rgba(223,186,83,.06);
+    transform: translateY(-1px);
+  }
+  .pol26-toc-grid b {
+    flex: 0 0 auto;
+    width: 22px; height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(223,186,83,.14);
+    color: #DFBA53;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  /* ===== Secciones ===== */
+  .pol26-sec { scroll-margin-top: 18px; }
+
+  .pol26-sec__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(223,186,83,.16);
+  }
+  .pol26-sec__num {
+    flex: 0 0 auto;
+    width: 34px; height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #06251a;
+    background-color: #DFBA53;
+    background-image: radial-gradient(circle at 32% 26%, #f7e29c 0%, #DFBA53 56%, #b8923a 100%);
+  }
+  .pol26-sec__head h2 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: clamp(15px, 2.1vw, 18px);
+    font-weight: 800;
+    letter-spacing: .6px;
+    line-height: 1.3;
+  }
+
+  .pol26-sec p { margin: 0 0 13px; color: #cfd6d1; font-size: 13.5px; }
+  .pol26-sec p:last-child { margin-bottom: 0; }
+
+  /* Variables de fusion de ShoWare: se resaltan solo visualmente (con
+     CSS, sin tocar el texto ni envolverlo en etiquetas) para que quien
+     edite el HTML las identifique facil. ShoWare las sustituye igual. */
+
+  /* ===== Aviso pendiente ===== */
+  .pol26-pending {
+    display: flex;
+    gap: 12px;
+    margin: 4px 0 0;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 184, 92, .45);
+    background: rgba(255, 184, 92, .07);
+  }
+  .pol26-pending svg {
+    flex: 0 0 auto;
+    width: 18px; height: 18px;
+    margin-top: 1px;
+    stroke: #ffb85c;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .pol26-pending-txt b {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #ffb85c;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  .pol26-pending-txt p {
+    margin: 0;
+    color: #e9d3b3;
+    font-size: 12.5px;
+    font-style: italic;
+    line-height: 1.55;
+  }
+
+  /* ===== Pie ===== */
+  .pol26-foot { text-align: center; padding-top: 8px; }
+  .pol26-foot-brand {
+    color: #ffffff;
+    font-family: "OVERTURE", "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .pol26-foot-org { color: #a9b3ad; font-size: 12.5px; margin-bottom: 20px; }
+  .pol26-foot-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .pol26-foot-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(223,186,83,.3);
+    background: rgba(0,0,0,.22);
+    color: #dfe4e0;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    transition: border-color .2s ease, background .2s ease;
+  }
+  .pol26-foot-contact a:hover { border-color: #DFBA53; background: rgba(223,186,83,.1); }
+  .pol26-foot-contact svg {
+    width: 15px; height: 15px;
+    stroke: #DFBA53;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .pol26-foot-contact svg.pol26-wa { fill: #DFBA53; stroke: none; }
+  .pol26-foot-legal {
+    margin: 24px auto 0;
+    max-width: 560px;
+    color: rgba(255,255,255,.35);
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  /* ===== Volver arriba ===== */
+  .pol26-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 42px; height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #DFBA53;
+    background-image: linear-gradient(180deg, #f0cf72 0%, #DFBA53 100%);
+    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+    text-decoration: none;
+    z-index: 5;
+  }
+  .pol26-top svg {
+    width: 18px; height: 18px;
+    stroke: #06251a;
+    fill: none;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @media (max-width: 640px) {
+    .pol26-toc-grid { grid-template-columns: 1fr; }
+    .pol26-card { padding: 20px 18px 18px; border-radius: 14px; }
+    .pol26-header { padding-top: 40px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+<div id="pol26-root">
+
+  <a id="pol26-arriba"></a>
+
+  <header class="pol26-header">
+    <span class="pol26-kicker">Festival Presidente</span>
+    <h1 class="pol26-title">Políticas de Seguridad<br>y Privacidad<em>Festival Presidente 2026</em></h1>
+  </header>
+
+  <div class="pol26-wrap">
+
+    <section class="pol26-card pol26-intro">
+      <p>Esta página explica cómo Festival Presidente - TuBoleta recopila, utiliza y protege tu información personal al comprar tus boletas, así como las medidas de seguridad aplicadas durante el proceso.</p>
+    </section>
+
+    <nav class="pol26-card pol26-toc" aria-label="Índice">
+      <h2>Índice</h2>
+      <div class="pol26-toc-grid">
+        <a href="#p1"><b>1</b> Acceso de la información personal</a>
+        <a href="#p2"><b>2</b> Cookies</a>
+        <a href="#p3"><b>3</b> Seguridad</a>
+        <a href="#p4"><b>4</b> Cambie su información personal</a>
+        <a href="#p5"><b>5</b> Cambios en la política</a>
+      </div>
+    </nav>
+
+    <section id="p1" class="pol26-card pol26-sec">
+      <div class="pol26-sec__head"><span class="pol26-sec__num">1</span><h2>Acceso de la información personal</h2></div>
+      <p>Festival Presidente - TuBoleta está confiado a mantener su información personal terminantemente confidencial. Solamente la organizadora de los eventos y funciones para las cuales los tickets fueron comprados conservará su información. Cuando recogemos su información personal (es decir nombre, dirección, E-mail, y número de teléfono) es para hacer un esfuerzo de mejorar su experiencia de las compras y de notificarle sobre actualizaciones del programa, servicios y respuestas. Más allá de la actual organización para su evento, es nuestra política para no divulgar cualquiera de su información personal en cualquier momento, a menos que usted nos diga. No vendemos, no negociamos ni alquilamos su información personal a terceros. A medida que pase el tiempo, se agregará y compartirá la información (colectiva) de los miembros como grupo, para generar informes y estudios de mercado para los socios de negocio. Estos informes no identificarán a miembros individuales.</p>
+    </section>
+
+    <section id="p2" class="pol26-card pol26-sec">
+      <div class="pol26-sec__head"><span class="pol26-sec__num">2</span><h2>Cookies</h2></div>
+      <p>Nuestro sitio utiliza cookies para personalizar y para mejorar su experiencia de compras. Estas cookies no contienen ninguna información confidencial o personal. Permiten que realcemos su experiencia de compras en Festival Presidente - TuBoleta. Por ejemplo, si usted ha agregado productos a su carro de compras y repentinamente tiene que cerrar el sitio, usted puede volver más tarde ese mismo día y todavía tener esos artículos en su carro de compras.</p>
+    </section>
+
+    <section id="p3" class="pol26-card pol26-sec">
+      <div class="pol26-sec__head"><span class="pol26-sec__num">3</span><h2>Seguridad</h2></div>
+      <p>Utilizamos métodos standard para proteger su información contra el acceso desautorizado. Entre otras técnicas, almacenamos la información en una computadora detrás de nuestro "firewall" en una localización segura, y restringimos el número de empleados internos que pueden tener acceso a tales datos. Para asegurar la seguridad de su información personal, incluyendo su número de la tarjeta de crédito, utilizamos tecnología Secure Socket Layer (SSL). SSL protege la información que cruza por Internet. Cualquier dato almacenado mantiene una localización segura off-site y se almacena en un servidor password-protected. Por favor, esté enterado, que no hay cosa tal como seguridad perfecta en Internet.</p>
+      <p>Por favor tenga presente el tema de seguridad cuando acceda a otros links desde Festival Presidente - TuBoleta. Cada compañía tiene por separado sus propias políticas de privacidad. Aunque elegimos a nuestros socios de negocio cuidadosamente, no podemos hacer ninguna representación referente a la privacidad y a seguridad en esos sitios.</p>
+      <p>Su contraseña es la clave para ingresar a su cuenta. Usted nunca debe compartirla con cualquier persona y solicitamos que la cambie periódicamente. Usted puede cambiar su contraseña en cualquier momento teniendo acceso a "mi cuenta" en nuestro Home Page. Si usted no puede recordar su contraseña, la frase del recordatorio que usted incorporó en el set-up debe ser ingresada y su contraseña será enviada por email a usted inmediatamente. Usted puede contactarnos en <a href="mailto:servicio@tuboleta.com.do">servicio@tuboleta.com.do</a> para ayuda adicional. Le recomendamos fuertemente a cerrar su cuenta y cerrar la ventana del navegador cuando usted termine sus compras con motivo de evitar que alguna otra persona o sistema tenga acceso a su cuenta.</p>
+    </section>
+
+    <section id="p4" class="pol26-card pol26-sec">
+      <div class="pol26-sec__head"><span class="pol26-sec__num">4</span><h2>Cambie su información personal</h2></div>
+      <p>Usted puede modificar o cambiar en cualquier momento cualquier información que usted nos haya proporcionado previamente, haciendo Click en "mi cuenta", después elige la sección apropiada para corregir, o para suprimir su información personal. Los cambios serán actualizados inmediatamente. Usted también puede contactarnos en <a href="mailto:servicio@tuboleta.com.do">servicio@tuboleta.com.do</a> y estaremos dispuestos a cambiar, modificar o suprimir cualquier información por usted.</p>
+    </section>
+
+    <section id="p5" class="pol26-card pol26-sec">
+      <div class="pol26-sec__head"><span class="pol26-sec__num">5</span><h2>Cambios en la política</h2></div>
+      <div class="pol26-pending">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <div class="pol26-pending-txt">
+          <b>Pendiente de completar</b>
+          <p>El documento fuente no incluye el texto de esta sección (cómo y cuándo se notificarán cambios a esta política). Completar antes de publicar.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pol26-card pol26-foot">
+      <div class="pol26-foot-brand">Festival Presidente 2026</div>
+      <div class="pol26-foot-org">Organiza SD CONCERTS · Boletería oficial: Tuboleta.com.do</div>
+      <div class="pol26-foot-contact">
+        <a href="tel:+18297330404">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          829-733-0404
+        </a>
+        <a href="mailto:servicio@tuboleta.com.do">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          servicio@tuboleta.com.do
+        </a>
+        <a href="https://wa.me/18295208207" target="_blank" rel="noopener">
+          <svg class="pol26-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="pol26-foot-legal">Este documento resume las Políticas de Seguridad y Privacidad de Festival Presidente - TuBoleta para la compra de boletas del Festival Presidente 2026. Ante cualquier duda, contáctanos a través de los canales oficiales.</p>
+    </footer>
+
+  </div>
+
+  <a class="pol26-top" href="#pol26-arriba" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
+  </a>
+
+</div>
+</body>
+</html>
